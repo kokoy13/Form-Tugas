@@ -1,5 +1,7 @@
 import wfh from "../assets/img/work-from-home.png"
 import { Link } from "react-router-dom"
+import Input from "./input"
+import Button from "./Button"
 
 function Form(){
     return(
@@ -10,14 +12,8 @@ function Form(){
                     <h1 className="text-3xl font-extrabold" style={{fontFamily: 'Dancing Script'}}>Login Tugas</h1>
                     <span className="text-sm">Form Login Website Tugas Pribadi</span>
                 </div>
-                <div className="flex gap-2 items-center">
-                    <label className="max-sm:text-sm" htmlFor="username">Username : </label>
-                    <input className="p-2 border-2 hover:border-yellow-500" type="text" name="username" id="username" placeholder="Amir Ganteng" required/>
-                </div>
-                <div className="flex gap-2 items-center">
-                    <label className="max-sm:text-sm" htmlFor="password">Password : </label>
-                    <input className="p-2 border-2 hover:border-yellow-500" type="password" name="password" id="password" placeholder="xxxxxxxx" required/>
-                </div>
+                <Input classname='hover:border-yellow-500' name="username" placeholder="Amir Ganteng">Username : </Input>
+                <Input classname='hover:border-yellow-500' name="password" type="password" placeholder='xxxxxxxx'>Password : </Input>
                 <div className="flex justify-between text-xs">   
                     <div className="flex gap-2 items-center">
                         <input type="checkbox" name="remember" id="remember"/>
@@ -28,9 +24,7 @@ function Form(){
                     </Link>
                 </div>
                 <div className="flex justify-center">
-                    <button style={{fontFamily: 'Dancing Script'}} className="font-extrabold text-2xl px-3 py-2 bg-yellow-500 rounded-full w-full hover:scale-110 transform duration-300" type="submit" name="login">
-                        Sign In
-                    </button>   
+                    <Button classname='w-full transform duration-300' fFamily = 'Dancing Script' font='extrabold' text="2xl" bg='yellow-500' rounded='full' hoverScale='110' type='submit' name='login'>Sign In</Button>
                 </div>
                 <div className="flex flex-col items-center gap-6">
                     <span>Don&apos;t have a account? <Link to="/register" className="text-yellow-500 hover:text-purple-600 underline">Sign Up</Link></span>
