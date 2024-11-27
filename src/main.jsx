@@ -4,7 +4,7 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './pages/Home'
 import Login from './pages/Login'
-import Register from './pages/REgister'
+import Register from './pages/Register'
 import InputHomework from './pages/InputHomework'
 import Homework from './pages/Homework'
 
