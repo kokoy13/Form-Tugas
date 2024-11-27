@@ -1,6 +1,6 @@
 import wfh from "../assets/img/work-from-home.png"
 import { Link } from "react-router-dom"
-import Input from "./input"
+import Input from "./InputBox"
 import Button from "./Button"
 
 function Form(){
